@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useState, useContext, useEffect, useRef, PropsWithChildren, CSSProperties } from 'react';
 import { MapContext } from '../MapProvider';
 import olOverlay, { Positioning } from 'ol/Overlay'

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Map } from 'ol';
 import { PropsWithChildren, createContext } from 'react';
 

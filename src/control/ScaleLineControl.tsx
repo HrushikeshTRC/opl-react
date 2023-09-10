@@ -1,7 +1,6 @@
 import { useContext, useEffect } from 'react'
-import { MapContext } from '../../MapProvider';
+import { MapContext } from '../MapProvider';
 import { ScaleLine } from 'ol/control';
-import "./scaleLineControl.css"
 
 const ScaleLineControl = () => {
     const map = useContext(MapContext);

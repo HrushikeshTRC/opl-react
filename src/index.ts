@@ -1,12 +1,10 @@
-import MapProvider from "./components/MapProvider";
-
-import * as control from './components/control'
-import * as interaction from './components/interaction'
-import * as layer from './components/layer'
-import * as source from './components/source'
-import * as overlay from './components/overlay'
-import * as map from './components/map'
+import * as control from './control'
+import * as interaction from './interaction'
+import * as layer from './layer'
+import * as source from './source'
+import * as overlay from './overlay'
 
 
-export { control, overlay, interaction, layer, source, map }
-export { MapProvider }
+export { control, overlay, interaction, layer, source }
+export { default as MapProvider } from "./MapProvider"
+export { default as OlMap } from "./OlMap"

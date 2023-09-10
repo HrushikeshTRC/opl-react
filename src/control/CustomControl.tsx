@@ -1,7 +1,7 @@
-import React from 'react';
+
 import { useEffect, useRef, useContext, ReactNode } from "react";
 import Control, { Options } from "ol/control/Control";
-import { MapContext } from "../../MapProvider";
+import { MapContext } from "../MapProvider";
 
 type ControlPosition = {
   top?: string;
