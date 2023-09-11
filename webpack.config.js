@@ -1,8 +1,10 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { ProgressPlugin } = require('webpack');
 
 module.exports = {
     mode: "production",
-    entry: './src/index.ts',
+    entry: path.resolve(__dirname, 'src/index.ts'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -26,4 +28,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
+    plugins: [
+        new ProgressPlugin(),
+        new CleanWebpackPlugin()
+    ]
 };
